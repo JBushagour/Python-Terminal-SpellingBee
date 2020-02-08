@@ -104,6 +104,12 @@ class HoneyComb():
         if word in self.guessedWords:
             print("You've guessed that word before.")
             return False
+
+        #check if word is correct length
+        if len(word) < 4:
+            print("Words must be at least 4 letters")
+            return False
+
         self.guessedWords.append(word)
         return True
 

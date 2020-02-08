@@ -16,7 +16,7 @@ def main():
     print("You must form words of at least 4 characters, always including the center letter.")
     print("The longer the word, the more points it's worth. A word using all 7 characters gets a bonus.")
 
-    # Flag for setting up the hangman
+    # Flag for the intial setup of the honeycomb
     initialRun = 1
 
     while True:
