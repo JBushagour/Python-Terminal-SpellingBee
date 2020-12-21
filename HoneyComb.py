@@ -84,7 +84,7 @@ class HoneyComb():
         wordSet = set(word)
 
         # check if word in our list of valid words
-        with open('validwords.txt', 'rb', 0) as file, \
+        with open('validWords.txt', 'rb', 0) as file, \
             mmap.mmap(file.fileno(), 0, access=mmap.ACCESS_READ) as s:
             if s.find(str.encode(word)) == -1:
                 print("That word isn't in the dictionary.")
